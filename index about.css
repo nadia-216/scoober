@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+}
+body{
+    background-position: 0 1100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: whitesmoke;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    margin-top: 4rem;
+    text-align: center;
+
+}
+h1{
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    color: purple;
+    margin-bottom: 2rem;
+}
+h2{
+    color: #777;
+    font-size: 3rem;
+    font-weight: 400;
+}
+p{
+    font-size: 1rem;
+    color: black;
+    line-height: 3rem;
+    margin-bottom: 5rem;
+
+}
+.btn{
+    text-decoration: none;
+    padding: 0.7rem 0.5rem;
+    background-color: grey;
+    font-size: 1rem;
+    display: inline-block;
+    color: lightskyblue;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.btn :hover{
+    background-color: darkblue;
+}

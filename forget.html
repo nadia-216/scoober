@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><forget.html></title>
+    <link rel="stylesheet" href="forget.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
+    <style
+        #msg{
+            visibility: hidden;
+            min-width: 250px;
+            background-color: palevioletred;
+
+            color: violet;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            right: 30%;
+            top: 30px;
+            font-size: 17px;
+
+            margin-right: 50px;
+
+        }
+        #msg.show{
+            visibility: visible;
+            -webkit-animation: fadein 0.5s.fadeout 0.5s 2.5s;
+        }
+        @-webkit-keyframes fadein{
+            from{top: 0;opacity: 0;}
+            to{top: 30px;opacity: 1;}
+        }
+        @keyframes fadein{
+            from{top: 0;opacity: 0;}
+            to{top: 30px;opacity: 1;}
+        }
+        @-webkit-keyframes fadeout{
+            from{top: 30;opacity: 1;}
+            to{top: 0px;opacity: 0;}
+        }
+        @keyframes fadeout {
+            from{top: 30;opacity: 1;}
+            to{top: 0;opacity: 0;}
+
+        }
+    </style>
+    <title><forget.html></title>
+
+</head>
+<body>
+    <form>
+    <div class="forget">
+        <h2 align="center" style="color: violet;">forget your password</h2>
+        <h5 style="font-size: 14px; color: olive;">enter the email  address  that you used in this account.We will send the link to reset your password</h5>
+        <input type="text" name="username" placeholder="enter your email address "><br><br>
+        <input type="button" value="send"onclick=myFunction()><br><br>
+        <a href="index.html" style="text-decoration: none;">Go back to Homepage</a><br><br>
+        <div id="snackbar">link send on your email address</div>
+            <script>
+            function myFunction(){
+                var x=document.getElementById("snackbar");
+                x.className= "show";
+                setTimeout(function () {x.className =
+                x.className.replace("show",""); },3000);
+                 
+              } 
+          
+        </script>
+
+
+    </form>
+
+    </div>
+</body>
+</html>
+

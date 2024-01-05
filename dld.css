@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: grey;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 50px;
+}
+.teacher student-box{
+    background-color:white;
+    display: flex;
+}
+.teacher student-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.teacher student-right{
+    flex-basis: 60%;
+    padding: 40px ;
+    background-color: black;
+    color: white;
+}
+h1{
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+container p{
+    margin-bottom: 40px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.input-row.input-group{
+    flex-basis: 45%;  
+}
+.Input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px #ccc;
+    outline:none;
+    padding-bottom: 5px;
+
+}
+textarea{
+    width: 100%;
+    outline: none;
+    border: 1 px#ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: black;
+
+}
+button{
+    background-color:black;
+    color: wheat;
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0,3);
+    cursor: pointer;
+
+}
+.contact-left h3{
+    color: black;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
